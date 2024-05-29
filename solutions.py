@@ -75,5 +75,5 @@ def align_text():
     price1 = float(input("Enter price #1: "))
     price2 = float(input("Enter price #2: "))
     price3 = float(input("Enter price #3: "))
-    print(""+"\n"+"Here are your prices!\n"+ "\n"+"Price #1: $" + format(price1, '>20,.2f') +"\n" +"Price #2: $" + format(price2, '>20,.2f') +"\n" "Price #3: $" + format(price3, '>20,.2f') )
+    print("\n"+"Here are your prices!\n"+ "\n"+"Price #1: $" + format(price1, '>20,.2f') +"\n" +"Price #2: $" + format(price2, '>20,.2f') +"\n" "Price #3: $" + format(price3, '>20,.2f') )
 
