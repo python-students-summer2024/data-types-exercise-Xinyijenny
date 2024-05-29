@@ -13,9 +13,7 @@ def calculate_profit():
     """
     interest = 0.23
     total_sales = int(input("How many total sales for the year?\n"))
-    profit = format(int(total_sales)*interest , ',.2f')
-    output_message = "profit: $" + profit
-    print(output_message)
+    print("profit: $" + format(int(total_sales)*interest , ',.2f'))
     
 
 
@@ -33,14 +31,9 @@ def calculate_quotient_and_remainder():
       2 goes into 5 a total of 2 times with a remainder of 1
     """
 
-    number1 = input("Enter number #1: ")
-    number2 = input("Enter number #2: ")
-    n1int = int(number1)
-    n2int = int(number2)
-    quotient = n1int // n2int
-    remainder = n1int % n2int
-    outmessage = "{b} goes into {a} a total of {c} times with a remainder of {d}".format( a = n1int , b = n2int, c = quotient, d =  remainder )
-    print(outmessage)
+    number1 =int( input("Enter number #1: "))
+    number2 = int(input("Enter number #2: "))
+    print("{} goes into {} a total of {} times with a remainder of {}".format( number2 , number1 , number1 // number2, number1 % number2 ))
 
 
 def calculate_miles_per_gallon():
@@ -57,9 +50,7 @@ def calculate_miles_per_gallon():
 
     miles = int(input("Miles driven: "))
     gas = int(input("Gas used (gallons): "))
-    mpg = format(miles / gas, '.1f')
-    outmessage = "Miles per gallon: " + mpg
-    print(outmessage)
+    print("Miles per gallon: " + format(miles / gas, '.1f'))
 
 
 
@@ -84,14 +75,6 @@ def align_text():
     price1 = float(input("Enter price #1: "))
     price2 = float(input("Enter price #2: "))
     price3 = float(input("Enter price #3: "))
-    
-    print("")
+    print(""+"\n"+"Here are your prices!\n"+ "\n"+"Price #1: $" + format(price1, '>20,.2f') +"\n" +"Price #2: $" + 
+          format(price2, '>20,.2f') +"\n" "Price #3: $" + format(price3, '>20,.2f') )
 
-    print("Here are your prices!\n")
-
-    outmessage1 = "Price #1: $" + format(price1, '>20,.2f')
-    outmessage2 = "Price #2: $" + format(price2, '>20,.2f')
-    outmessage3 = "Price #3: $" + format(price3, '>20,.2f')
-    print(outmessage1)
-    print(outmessage2)
-    print(outmessage3)
